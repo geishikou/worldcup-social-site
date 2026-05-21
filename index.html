@@ -3,47 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amoebix Social Automation</title>
+    <title>OVO Arts & Science - Social Media Portal</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f8f9fa; color: #333; margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
         .container { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; }
-        .login-box { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 400px; width: 100%; text-align: center; }
-        .login-box h1 { font-size: 24px; margin-bottom: 10px; color: #111; }
+        .login-box { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); max-width: 420px; width: 100%; text-align: center; border: 1px solid #eaeaea; }
+        .logo-area { margin-bottom: 20px; font-weight: bold; font-size: 22px; color: #000; letter-spacing: 1px; }
+        .logo-area span { display: block; font-size: 12px; color: #666; font-weight: normal; margin-top: 5px; }
+        .login-box h1 { font-size: 20px; margin-bottom: 8px; color: #111; font-weight: 600; }
         .login-box p { font-size: 14px; color: #666; margin-bottom: 30px; }
         .form-group { margin-bottom: 20px; text-align: left; }
-        .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; }
-        .form-group input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
-        .btn { background-color: #000; color: #fff; border: none; padding: 12px; width: 100%; border-radius: 4px; font-size: 16px; font-weight: 600; cursor: pointer; }
-        .btn:hover { background-color: #333; }
-        .notice { margin-top: 20px; font-size: 12px; color: #888; background: #f9f9f9; padding: 10px; border-radius: 4px; border-left: 3px solid #ff3b30; }
-        footer { text-align: center; padding: 20px; font-size: 13px; color: #666; background: #fff; border-top: 1px solid #eaeaea; }
-        footer a { color: #000; text-decoration: none; margin: 0 10px; }
+        .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #444; }
+        .form-group input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 14px; transition: border-color 0.2s; }
+        .form-group input:focus { border-color: #000; outline: none; }
+        .btn { background-color: #000; color: #fff; border: none; padding: 14px; width: 100%; border-radius: 6px; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        .btn:hover { background-color: #222; }
+        .notice { margin-top: 25px; font-size: 12px; color: #777; background: #fff5f5; padding: 12px; border-radius: 6px; border-left: 4px solid #e53e3e; text-align: left; line-height: 1.5; }
+        footer { text-align: center; padding: 25px; font-size: 13px; color: #666; background: #fff; border-top: 1px solid #eaeaea; }
+        footer a { color: #000; text-decoration: none; margin: 0 12px; font-weight: 500; }
         footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="login-box">
-            <h1>Amoebix Social Portal</h1>
-            <p>Internal Social Media Automation System</p>
-            <form onsubmit="event.preventDefault(); alert('Please use your Amoebix SSO credentials to log in.');">
+            <div class="logo-area">
+                OVO Arts & Science
+                <span>OVO芸術科学株式会社</span>
+            </div>
+            <h1>Internal Automation Center</h1>
+            <p>Marketing & Publishing Platform for "童画こども美術教室"</p>
+            <form onsubmit="event.preventDefault(); alert('Authentication Error: Please connect via OVO Internal Corporate Network or contact IT administrator.');">
                 <div class="form-group">
-                    <label>Employee ID / Email</label>
-                    <input type="text" placeholder="name@amoebix.net" required>
+                    <label>Corporate Email Address</label>
+                    <input type="email" placeholder="username@amoebix.net" required>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
                     <input type="password" placeholder="••••••••" required>
                 </div>
-                <button type="submit" class="btn">Secure Login</button>
+                <button type="submit" class="btn">Sign In to Dashboard</button>
             </form>
             <div class="notice">
-                <strong>Access Restricted:</strong> This system is strictly for authorized Amoebix personnel only. Unauthorized access is prohibited.
+                <strong>RESTRICTED SYSTEM:</strong> Authorized operational personnel of OVO芸術科学株式会社 only. This terminal handles automated content broadcasting for verified brand channels.
             </div>
         </div>
     </div>
     <footer>
-        &copy; 2026 Amoebix. All rights reserved. <br><br>
+        &copy; 2026 OVO芸術科学株式会社 (OVO Arts & Science Co., Ltd.). All rights reserved. <br><br>
         <a href="privacy-policy.html">Privacy Policy</a> | 
         <a href="terms.html">Terms of Service</a>
     </footer>
