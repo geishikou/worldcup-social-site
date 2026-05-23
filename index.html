@@ -3,49 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OVO Arts & Science - Social Media Portal</title>
+    <title>OVO Art Portal - 童画こども美術教室</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f8f9fa; color: #333; margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
-        .container { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; }
-        .login-box { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); max-width: 420px; width: 100%; text-align: center; border: 1px solid #eaeaea; }
-        .logo-area { margin-bottom: 20px; font-weight: bold; font-size: 22px; color: #000; letter-spacing: 1px; }
-        .logo-area span { display: block; font-size: 12px; color: #666; font-weight: normal; margin-top: 5px; }
-        .login-box h1 { font-size: 20px; margin-bottom: 8px; color: #111; font-weight: 600; }
-        .login-box p { font-size: 14px; color: #666; margin-bottom: 30px; }
-        .form-group { margin-bottom: 20px; text-align: left; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #fafbfc; color: #333; margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+        .container { flex: 1; display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
+        .wrapper { display: flex; max-width: 900px; width: 100%; background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eef0f2; overflow: hidden; }
+        .info-side { flex: 1; background: #111; color: #fff; padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+        .info-side h2 { font-size: 24px; margin-bottom: 20px; font-weight: 600; letter-spacing: 0.5px; }
+        .feature-list { list-style: none; padding: 0; margin: 0; }
+        .feature-item { margin-bottom: 20px; font-size: 14px; line-height: 1.5; color: #ccc; position: relative; padding-left: 24px; }
+        .feature-item::before { content: "✓"; position: absolute; left: 0; color: #34c759; font-weight: bold; }
+        .feature-item strong { color: #fff; display: block; margin-bottom: 2px; }
+        .login-side { flex: 1; padding: 40px; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+        .logo-area { margin-bottom: 25px; font-weight: bold; font-size: 22px; color: #000; }
+        .logo-area span { display: block; font-size: 13px; color: #666; font-weight: normal; margin-top: 4px; }
+        .login-side h1 { font-size: 20px; margin-bottom: 6px; color: #111; }
+        .login-side p { font-size: 14px; color: #666; margin-bottom: 25px; }
+        .form-group { margin-bottom: 18px; text-align: left; }
         .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #444; }
-        .form-group input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 14px; transition: border-color 0.2s; }
+        .form-group input { width: 100%; padding: 12px; border: 1px solid #ccd1d9; border-radius: 8px; box-sizing: border-box; font-size: 14px; }
         .form-group input:focus { border-color: #000; outline: none; }
-        .btn { background-color: #000; color: #fff; border: none; padding: 14px; width: 100%; border-radius: 6px; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        .btn { background-color: #000; color: #fff; border: none; padding: 14px; width: 100%; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
         .btn:hover { background-color: #222; }
-        .notice { margin-top: 25px; font-size: 12px; color: #777; background: #fff5f5; padding: 12px; border-radius: 6px; border-left: 4px solid #e53e3e; text-align: left; line-height: 1.5; }
         footer { text-align: center; padding: 25px; font-size: 13px; color: #666; background: #fff; border-top: 1px solid #eaeaea; }
         footer a { color: #000; text-decoration: none; margin: 0 12px; font-weight: 500; }
         footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) { .wrapper { flex-direction: column; } .info-side { padding: 30px; } }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="login-box">
-            <div class="logo-area">
-                OVO Arts & Science
-                <span>OVO芸術科学株式会社</span>
+        <div class="wrapper">
+            <div class="info-side">
+                <h2>OVO Art Hub</h2>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <strong>Lesson Scheduling & Tracking</strong>
+                        Parents and students can easily book art classes, track attendance, and manage remaining course credits.
+                    </li>
+                    <li class="feature-item">
+                        <strong>Teacher Reviews & Art Portfolios</strong>
+                        Access direct feedback from art instructors and view high-quality digital archives of your children's artwork.
+                    </li>
+                    <li class="feature-item">
+                        <strong>Creative Social Showcasing</strong>
+                        Instructors and advanced students can instantly showcase standout student creations to connected platforms like TikTok.
+                    </li>
+                </ul>
             </div>
-            <h1>Internal Automation Center</h1>
-            <p>Marketing & Publishing Platform for "童画こども美術教室"</p>
-            <form onsubmit="event.preventDefault(); alert('Authentication Error: Please connect via OVO Internal Corporate Network or contact IT administrator.');">
-                <div class="form-group">
-                    <label>Corporate Email Address</label>
-                    <input type="email" placeholder="username@amoebix.net" required>
+            <div class="login-side">
+                <div class="logo-area">
+                    OVO Arts & Science
+                    <span>童画こども美術教室</span>
                 </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" placeholder="••••••••" required>
-                </div>
-                <button type="submit" class="btn">Sign In to Dashboard</button>
-            </form>
-            <div class="notice">
-                <strong>RESTRICTED SYSTEM:</strong> Authorized operational personnel of OVO芸術科学株式会社 only. This terminal handles automated content broadcasting for verified brand channels.
+                <h1>Student & Parent Portal</h1>
+                <p>Sign in to access your digital classroom</p>
+                <form onsubmit="event.preventDefault(); alert('Portal is currently updating. Please access student records through our mobile application or contact school administration.');">
+                    <div class="form-group">
+                        <label>Registered Email</label>
+                        <input type="email" placeholder="parent@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn">Sign In</button>
+                </form>
             </div>
         </div>
     </div>
