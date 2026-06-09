@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OVO Art Portal - 童画こども美術教室</title>
+    <title>Worldcup Social - Creative Art Portal</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #fafbfc; color: #333; margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
         .container { flex: 1; display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
@@ -12,21 +12,25 @@
         .info-side h2 { font-size: 24px; margin-bottom: 20px; font-weight: 600; letter-spacing: 0.5px; }
         .feature-list { list-style: none; padding: 0; margin: 0; }
         .feature-item { margin-bottom: 20px; font-size: 14px; line-height: 1.5; color: #ccc; position: relative; padding-left: 24px; }
-        .feature-item::before { content: "✓"; position: absolute; left: 0; color: #34c759; font-weight: bold; }
+        .feature-item::before { content: "✓"; position: absolute; left: 0; color: #ff3b30; font-weight: bold; }
         .feature-item strong { color: #fff; display: block; margin-bottom: 2px; }
-        .login-side { flex: 1; padding: 40px; display: flex; flex-direction: column; justify-content: center; text-align: center; }
-        .logo-area { margin-bottom: 25px; font-weight: bold; font-size: 22px; color: #000; }
+        .login-side { flex: 1; padding: 40px; display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center; }
+        
+        /* 临摹红底大眼睛 App Icon 确保一致性 */
+        .app-icon-visual { width: 80px; height: 80px; background: #ff3b30; border-radius: 18px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; font-size: 32px; box-shadow: 0 4px 10px rgba(255,59,48,0.3); }
+        
+        .logo-area { margin-bottom: 25px; font-weight: bold; font-size: 24px; color: #000; }
         .logo-area span { display: block; font-size: 13px; color: #666; font-weight: normal; margin-top: 4px; }
         .login-side h1 { font-size: 20px; margin-bottom: 6px; color: #111; }
         .login-side p { font-size: 14px; color: #666; margin-bottom: 25px; }
-        .form-group { margin-bottom: 18px; text-align: left; }
+        .form-group { margin-bottom: 18px; text-align: left; width: 100%; }
         .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #444; }
         .form-group input { width: 100%; padding: 12px; border: 1px solid #ccd1d9; border-radius: 8px; box-sizing: border-box; font-size: 14px; }
-        .form-group input:focus { border-color: #000; outline: none; }
-        .btn { background-color: #000; color: #fff; border: none; padding: 14px; width: 100%; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
-        .btn:hover { background-color: #222; }
-        .notice { margin-top: 25px; font-size: 12px; color: #555; background: #f0faf0; padding: 12px; border-radius: 8px; border-left: 4px solid #34c759; text-align: left; line-height: 1.6; }
-        footer { text-align: center; padding: 25px; font-size: 13px; color: #666; background: #fff; border-top: 1px solid #eaeaea; }
+        .form-group input:focus { border-color: #ff3b30; outline: none; }
+        .btn { background-color: #ff3b30; color: #fff; border: none; padding: 14px; width: 100%; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        .btn:hover { background-color: #e5332a; }
+        .notice { margin-top: 25px; font-size: 12px; color: #555; background: #fff5f5; padding: 12px; border-radius: 8px; border-left: 4px solid #ff3b30; text-align: left; line-height: 1.6; width: 100%; box-sizing: border-box; }
+        footer { text-align: center; padding: 25px; font-size: 13px; color: #666; background: #fff; border-top: 1px solid #eaeaea; width: 100%; }
         footer a { color: #000; text-decoration: none; margin: 0 12px; font-weight: 500; }
         footer a:hover { text-decoration: underline; }
         @media (max-width: 768px) { .wrapper { flex-direction: column; } .info-side { padding: 30px; } }
@@ -36,29 +40,51 @@
     <div class="container">
         <div class="wrapper">
             <div class="info-side">
-                <h2>OVO Art Hub</h2>
+                <h2>Worldcup Social Hub</h2>
                 <ul class="feature-list">
                     <li class="feature-item">
-                        <strong>Lesson Scheduling & Tracking</strong>
-                        Parents and students can easily book art classes, track attendance, and manage remaining course credits.
+                        <strong>Creative Theme Tracking</strong>
+                        Art students and sports creators can discover global creative themes, soccer events archives, and manage campaign schedules.
                     </li>
                     <li class="feature-item">
-                        <strong>Teacher Reviews & Art Portfolios</strong>
-                        Access direct feedback from art instructors and view high-quality digital archives of your children's artwork.
+                        <strong>Art Portfolios & Reviews</strong>
+                        Access evaluations from professional art mentors and showcase digitized high-resolution children art collections.
                     </li>
                     <li class="feature-item">
-                        <strong>Creative Social Showcasing</strong>
-                        Instructors and advanced students can instantly showcase standout student creations to connected platforms like TikTok.
+                        <strong>Multi-platform Creative Sync</strong>
+                        Instructors and registered creators can seamlessly publish verified art student creations directly to connected feeds like TikTok.
                     </li>
                 </ul>
             </div>
             <div class="login-side">
+                <div class="app-icon-visual">👀</div>
                 <div class="logo-area">
-                    OVO Arts & Science
-                    <span>童画こども美術教室</span>
+                    Worldcup Social
+                    <span>童画こども美術教室 & OVO Arts</span>
                 </div>
-                <h1>Student & Parent Portal</h1>
-                <p>Sign in to access your digital classroom</p>
-                <form onsubmit="event.preventDefault(); alert('Portal is currently updating. Please access student records through our mobile application or contact school administration.');">
+                <h1>Creator & Parent Portal</h1>
+                <p>Sign in to access your dashboard</p>
+                <form onsubmit="event.preventDefault(); alert('System updates in progress. Please log in via our mobile application or contact management.');">
                     <div class="form-group">
-                        <label>Registered
+                        <label>Email Address</label>
+                        <input type="email" placeholder="parent@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn">Log In</button>
+                </form>
+                <div class="notice">
+                    <strong>Welcome Announcement:</strong> Welcome to Worldcup Social. Registered users can manage creative art archives. To comply with children privacy protection rules, any social synchronization must be authorized by parents before publishing.
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2026 OVO芸術科学株式会社 (OVO Arts & Science Co., Ltd.). All rights reserved. <br><br>
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="terms-of-service.html">Terms of Service</a>
+    </footer>
+</body>
+</html>
