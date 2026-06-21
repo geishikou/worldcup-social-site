@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Worldcup Social - Creative Art Portal</title>
+    <title>Amoebix Social - Creative Portal</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #fafbfc; color: #333; margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
         .container { flex: 1; display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
@@ -16,14 +16,16 @@
         .feature-item strong { color: #fff; display: block; margin-bottom: 2px; }
         .login-side { flex: 1; padding: 40px; display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center; }
         
-        /* 临摹红底大眼睛 App Icon 确保一致性 */
-        .app-icon-visual { width: 80px; height: 80px; background: #ff3b30; border-radius: 18px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; font-size: 32px; box-shadow: 0 4px 10px rgba(255,59,48,0.3); }
-        
+        /* 纯 CSS 完美复刻红底大眼睛 App Icon，解决图标一致性卡关 */
+        .app-icon-visual { width: 70px; height: 70px; background: #ff3b30; border-radius: 16px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 12px rgba(255,59,48,0.2); }
+        .eye-white { width: 36px; height: 36px; background: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+        .eye-pupil { width: 16px; height: 16px; background: #111; border-radius: 50%; }
+
         .logo-area { margin-bottom: 25px; font-weight: bold; font-size: 24px; color: #000; }
         .logo-area span { display: block; font-size: 13px; color: #666; font-weight: normal; margin-top: 4px; }
         .login-side h1 { font-size: 20px; margin-bottom: 6px; color: #111; }
         .login-side p { font-size: 14px; color: #666; margin-bottom: 25px; }
-        .form-group { margin-bottom: 18px; text-align: left; width: 100%; }
+        .form-group { margin-bottom: 18px; text-align: left; width: 100%; box-sizing: border-box; }
         .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #444; }
         .form-group input { width: 100%; padding: 12px; border: 1px solid #ccd1d9; border-radius: 8px; box-sizing: border-box; font-size: 14px; }
         .form-group input:focus { border-color: #ff3b30; outline: none; }
@@ -40,7 +42,7 @@
     <div class="container">
         <div class="wrapper">
             <div class="info-side">
-                <h2>Worldcup Social Hub</h2>
+                <h2>Amoebix Social Hub</h2>
                 <ul class="feature-list">
                     <li class="feature-item">
                         <strong>Creative Theme Tracking</strong>
@@ -57,9 +59,13 @@
                 </ul>
             </div>
             <div class="login-side">
-                <div class="app-icon-visual">👀</div>
+                <div class="app-icon-visual">
+                    <div class="eye-white">
+                        <div class="eye-pupil"></div>
+                    </div>
+                </div>
                 <div class="logo-area">
-                    Worldcup Social
+                    Amoebix Social
                     <span>童画こども美術教室 & OVO Arts</span>
                 </div>
                 <h1>Creator & Parent Portal</h1>
@@ -76,7 +82,7 @@
                     <button type="submit" class="btn">Log In</button>
                 </form>
                 <div class="notice">
-                    <strong>Welcome Announcement:</strong> Welcome to Worldcup Social. Registered users can manage creative art archives. To comply with children privacy protection rules, any social synchronization must be authorized by parents before publishing.
+                    <strong>Welcome Announcement:</strong> Welcome to Amoebix Social. Registered users can manage creative art archives. To comply with children privacy protection rules, any social synchronization must be authorized by parents before publishing.
                 </div>
             </div>
         </div>
